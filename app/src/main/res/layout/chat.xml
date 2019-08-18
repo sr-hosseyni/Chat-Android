@@ -1,0 +1,57 @@
+<!--<android.support.design.internal.ForegroundLinearLayout-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_gravity="bottom">-->
+
+
+    <!--<TextView xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--xmlns:tools="http://schemas.android.com/tools"-->
+        <!--android:id="@+id/chat"-->
+        <!--style="?android:attr/textAppearanceLarge"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="16dp"-->
+        <!--android:textIsSelectable="true"-->
+        <!--tools:context="ir.sircoder.sirchat.ItemDetailFragment" />-->
+
+
+    <!--<EditText-->
+        <!--android:id="@+id/messageInput"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:hint="Type your messageInterface" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/sendButton"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:text="@string/send_button" />-->
+
+<!--</android.support.design.internal.ForegroundLinearLayout>-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_detail"
+    style="?android:attr/textAppearanceLarge"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ir.sircoder.sirchat.ItemDetailFragment" >
+
+    <!--<ListView-->
+        <!--android:id="@+id/messagesList"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="80dp">-->
+    <!--</ListView>-->
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/chat_message" />
+    </FrameLayout>
+
+</LinearLayout>
